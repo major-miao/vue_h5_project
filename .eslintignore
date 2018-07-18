@@ -1,4 +1,4 @@
 build/*.js
 config/*.js
-src/public/js/libs/*.js
-src/public/js/utils/validate/*.js
+src/static/js/libs/*.js
+src/static/js/utils/validate/*.js

@@ -1,0 +1,52 @@
+  /*登录组件样式*/
+  @charset "utf-8"; // 样式变量/函数
+  @import '../../common/config';
+  .login-content-box {
+    font-size: rem(17);
+    .title-input-box {
+      display: flex;
+      padding: rem(16) 0;
+      margin:0 rem(16);
+      align-items: center;
+      .title-box {
+        color: #333;
+      }
+    }
+    .input-box {
+      padding-left: rem(8);
+      display: flex;
+      align-items: center;
+      input {
+        width: rem(150);
+        border: none;
+      }
+      .send-code {
+        padding: 0 rem(10);
+        display:block;
+        button{
+          width:rem(90);
+          text-align:center;
+        }
+        .active{
+          color:#999;
+        }
+      }
+    }
+  }
+
+
+
+  .login-operate-box {
+    font-size: rem(17);
+    margin:rem(20) rem(16);
+    a {
+      border-radius: rem(5);
+      display: block;
+      width: 100%;
+      height: rem(52);
+      line-height: rem(52);
+      background-color: #4C4D61;
+      color: #fff;
+      text-align: center;
+    }
+  }

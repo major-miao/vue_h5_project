@@ -55,7 +55,7 @@ exports.cssLoaders = function(options) {
     }
 
     function resolveResource(name) {
-        return path.resolve(__dirname, '../src/public/css/' + name)
+        return path.resolve(__dirname, '../src/static/css/' + name)
     }
 
     function generateSassResourceLoader() {

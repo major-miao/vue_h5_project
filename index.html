@@ -31,6 +31,25 @@
       document.getElementsByTagName("html")[0].style.fontSize = iWidth / 10 + "px";
     }
   })();
+
+  function consoleLog() {
+    if (window.location.host.indexOf('.com') <= -1) {
+      var head = document.getElementsByTagName('head')[0];
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = "https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/2.5.1/vconsole.min.js";
+      if (typeof(callback) == 'function') {
+        script.onload = script.onreadystatechange = function() {
+          if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") {
+            callback();
+            script.onload = script.onreadystatechange = null;
+          }
+        };
+      }
+      head.appendChild(script);
+    }
+  }
+  // consoleLog();
   </script>
   <!-- 分享朋友圈/微信/QQ -->
   <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>

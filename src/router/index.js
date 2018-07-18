@@ -9,7 +9,7 @@ const router = new Router({
     // 服务支持
     {
       // 统一的活动页入口
-      path: '/h5/common/active/index',
+      path: '/h5/common/active/index/:activityMark',
       name: 'comm',
       component: (resolve) => {
         require(['@/views/comm/index'], resolve);

@@ -1,0 +1,34 @@
+/*登录组件样式*/
+@charset "utf-8"; // 样式变量/函数
+@import '../../common/config';
+.result-box {
+  header {
+    color: #333;
+    font-size: rem(18);
+    text-align: center;
+    padding:rem(20) rem(16);
+    p {
+      display: inline-block;
+      text-align: left;
+    }
+  }
+  main {
+    color: #666;
+    font-size: rem(16);
+    text-align: center;
+    p {
+      display: inline-block;
+      text-align: left;
+    }
+  }
+  footer {
+    color: #999;
+    font-size: rem(14);
+    text-align: center;
+    padding:rem(16) rem(16);
+    p {
+      display: inline-block;
+      text-align: left;
+    }
+  }
+}

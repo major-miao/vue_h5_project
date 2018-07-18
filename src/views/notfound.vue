@@ -1,11 +1,11 @@
 <template>
     <div class="notfound">
-      <img src="../public/img/404/404.gif" />
+      <img src="../static/img/404/404.gif" />
     </div>
 </template>
 
 <style lang="scss">
-  @import "./../public/css/pages/comm/index";
+  @import "./../static/css/pages/comm/index";
   .notfound{
   	position: absolute;
   	top:50%;

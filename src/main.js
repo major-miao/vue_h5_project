@@ -4,11 +4,10 @@ import Vue from 'vue';
 import App from './App';
 import router from './router';
 import store from './store';
-import $axios from './public/js/utils/http';
-import './public/css/index.scss';
-
-require('./public/js/utils/utils')(Vue);
-
+import $axios from './static/js/utils/http';
+import utils from './static/js/utils/utils';
+import './static/css/index.scss';
+Vue.use(utils);
 Vue.config.productionTip = false;
 Vue.config.devtools = (process.env.NODE_ENV !== 'production');
 

@@ -1,0 +1,7 @@
+@charset "utf-8";
+//单位配置
+$r_750:640/750/2/32;
+//函数配置
+@function rem($px) {
+    @return $px * $r_750 * 2rem;
+}
